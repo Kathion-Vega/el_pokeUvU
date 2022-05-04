@@ -1,0 +1,78 @@
+[debug] [2022-05-04T15:55:28.702Z] ----------------------------------------------------------------------
+[debug] [2022-05-04T15:55:28.704Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-05-04T15:55:28.704Z] CLI Version:   10.7.2
+[debug] [2022-05-04T15:55:28.704Z] Platform:      win32
+[debug] [2022-05-04T15:55:28.704Z] Node Version:  v16.13.0
+[debug] [2022-05-04T15:55:28.705Z] Time:          Wed May 04 2022 10:55:28 GMT-0500 (hora de verano central)
+[debug] [2022-05-04T15:55:28.705Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-04T15:55:28.771Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-04T15:55:28.772Z] > authorizing via signed-in user (kathiavegamina@gmail.com)
+[debug] [2022-05-04T15:55:28.772Z] [iam] checking project elpokeuvu for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-04T15:55:28.774Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/elpokeuvu:testIamPermissions [none]
+[debug] [2022-05-04T15:55:28.774Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/elpokeuvu:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-04T15:55:29.115Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/elpokeuvu:testIamPermissions 200
+[debug] [2022-05-04T15:55:29.115Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/elpokeuvu:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-04T15:55:29.116Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/elpokeuvu/serviceAccounts/elpokeuvu@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2022-05-04T15:55:29.117Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/elpokeuvu/serviceAccounts/elpokeuvu@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-05-04T15:55:30.523Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/elpokeuvu/serviceAccounts/elpokeuvu@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2022-05-04T15:55:30.523Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/elpokeuvu/serviceAccounts/elpokeuvu@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-05-04T15:55:30.525Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/elpokeuvu [none]
+[debug] [2022-05-04T15:55:30.903Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/elpokeuvu 200
+[debug] [2022-05-04T15:55:30.903Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/elpokeuvu {"projectId":"elpokeuvu","projectNumber":"292740148856","displayName":"elpokeUvU","name":"projects/elpokeuvu","resources":{"hostingSite":"elpokeuvu","realtimeDatabaseInstance":"elpokeuvu-default-rtdb","storageBucket":"elpokeuvu.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'elpokeuvu'...
+[info] 
+[info] i  deploying firestore, functions, hosting 
+[debug] [2022-05-04T15:55:31.071Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at new NodeError (node:internal/errors:371:5)
+    at validateString (node:internal/validators:119:11)
+    at Object.join (node:path:429:7)
+    at Config.path (C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:122:45)
+    at getChildEnvironment (C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:50:49)
+    at runTargetCommands (C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:71:14)
+    at C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:122:24
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async chain (C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:32:9)
+    at async deploy (C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:66:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-05-04T15:56:01.542Z] ----------------------------------------------------------------------
+[debug] [2022-05-04T15:56:01.544Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy -m Deploying the best new feature ever.
+[debug] [2022-05-04T15:56:01.544Z] CLI Version:   10.7.2
+[debug] [2022-05-04T15:56:01.545Z] Platform:      win32
+[debug] [2022-05-04T15:56:01.545Z] Node Version:  v16.13.0
+[debug] [2022-05-04T15:56:01.546Z] Time:          Wed May 04 2022 10:56:01 GMT-0500 (hora de verano central)
+[debug] [2022-05-04T15:56:01.546Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-04T15:56:01.615Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-04T15:56:01.616Z] > authorizing via signed-in user (kathiavegamina@gmail.com)
+[debug] [2022-05-04T15:56:01.616Z] [iam] checking project elpokeuvu for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-04T15:56:01.618Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/elpokeuvu:testIamPermissions [none]
+[debug] [2022-05-04T15:56:01.619Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/elpokeuvu:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-04T15:56:01.977Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/elpokeuvu:testIamPermissions 200
+[debug] [2022-05-04T15:56:01.978Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/elpokeuvu:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-04T15:56:01.978Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/elpokeuvu/serviceAccounts/elpokeuvu@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2022-05-04T15:56:01.978Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/elpokeuvu/serviceAccounts/elpokeuvu@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-05-04T15:56:02.285Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/elpokeuvu/serviceAccounts/elpokeuvu@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2022-05-04T15:56:02.286Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/elpokeuvu/serviceAccounts/elpokeuvu@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-05-04T15:56:02.288Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/elpokeuvu [none]
+[debug] [2022-05-04T15:56:03.614Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/elpokeuvu 200
+[debug] [2022-05-04T15:56:03.615Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/elpokeuvu {"projectId":"elpokeuvu","projectNumber":"292740148856","displayName":"elpokeUvU","name":"projects/elpokeuvu","resources":{"hostingSite":"elpokeuvu","realtimeDatabaseInstance":"elpokeuvu-default-rtdb","storageBucket":"elpokeuvu.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'elpokeuvu'...
+[info] 
+[info] i  deploying firestore, functions, hosting 
+[debug] [2022-05-04T15:56:03.773Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at new NodeError (node:internal/errors:371:5)
+    at validateString (node:internal/validators:119:11)
+    at Object.join (node:path:429:7)
+    at Config.path (C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:122:45)
+    at getChildEnvironment (C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:50:49)
+    at runTargetCommands (C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:71:14)
+    at C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:122:24
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async chain (C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:32:9)
+    at async deploy (C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:66:5)
+[error] 
+[error] Error: An unexpected error has occurred.
